@@ -61,7 +61,7 @@ ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(기준값) 데이터
 
 | Roll 추정 결과 비교 | Pitch 추정 결과 비교 |
 | :---: | :---: |
-| ![Result1](https://raw.githubusercontent.com/imhyeonwoo/imhyeonwoo/main/assests/Konkuk/Signal%26System/Settings1.png) | ![Result2](https://raw.githubusercontent.com/imhyeonwoo/imhyeonwoo/main/assests/Konkuk/Signal%26System/Settings2.png) |
+| ![Result1](https://github.com/imhyeonwoo/imhyeonwoo/blob/main/assests/Konkuk/Signal%26System/roll.jpg) | ![Result2](https://github.com/imhyeonwoo/imhyeonwoo/blob/main/assests/Konkuk/Signal%26System/pitch.jpg) |
 
 -   **Roll RMSE**: Gyro `0.73°`, Acc `0.74°`, **CF `0.74°`**
 -   **Pitch RMSE**: Gyro `1.44°`, Acc `1.37°`, **CF `1.34°`**
