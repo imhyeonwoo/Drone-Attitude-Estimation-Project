@@ -1,8 +1,8 @@
 # 드론 자세 추정 프로젝트 (IMU & Complementary Filter)
 
-건국대학교 '신호 및 시스템' 과목의 텀 프로젝트입니다.
+건국대학교 '신호 및 시스템' 과목의 Term Project입니다.
 
-본 프로젝트는 ROS bag 파일로 수집된 IMU(Xsens) 센서와 OptiTrack 시스템 데이터를 사용하여 드론의 자세(Roll, Pitch)를 추정하는 것을 목표로 합니다. 각 센서 데이터의 특성을 분석하고, 상보 필터(Complementary Filter)를 이용한 센서 퓨전 기법을 구현하여 그 성능을 검증합니다.
+본 프로젝트는 ROS bag 파일로 수집된 IMU(Xsens) 센서와 OptiTrack 시스템 데이터를 사용하여 드론의 자세(Roll, Pitch)를 추정하는 것을 목표로 합니다. 각 센서 데이터의 특성을 분석하고, **상보 필터(Complementary Filter)**를 이용한 센서 퓨전 기법을 구현하여 그 성능을 검증합니다.
 
 <br>
 
