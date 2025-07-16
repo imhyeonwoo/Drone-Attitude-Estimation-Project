@@ -77,7 +77,7 @@ ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(기준값) 데이터
     git clone https://github.com/imhyeonwoo/Drone-Attitude-Estimation-Project.git
     ```
 2.  MATLAB에서 프로젝트 폴더를 엽니다.
-3.  `signal_exp_data.bag` 파일을 프로젝트 폴더 내에 위치시킵니다. (해당 파일은 용량 문제로 저장소에 포함되어 있지 않습니다.)
+3.  `signal_exp_data.bag` 파일을 프로젝트 폴더 내에 위치시킵니다. (해당 파일은 data 폴더에 있습니다.)
 4.  `packet_student.m`을 실행하여 `.bag` 파일로부터 `packet_data.mat` 파일을 생성합니다.
 5.  `ARS_student_V1.m`을 실행하여 모든 알고리즘을 수행하고 결과 그래프를 확인합니다.
 
