@@ -8,7 +8,7 @@
 
 ## 1. 프로젝트 목표 및 전체 흐름
 
-ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(기준값) 데이터를 추출하고 전처리합니다. 이후 가속도계와 자이로스코프의 단점을 보완하는 상보 필터를 설계하여 두 센서의 장점을 융합하고, 이를 통해 안정적이고 정확한 자세(Roll, Pitch)를 추정하는 것이 최종 목표입니다.
+ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(Reference) 데이터를 추출하고 전처리합니다. 이후 가속도계와 자이로스코프의 단점을 보완하는 상보 필터를 설계하여 두 센서의 장점을 융합하고, 이를 통해 안정적이고 정확한 자세(Roll, Pitch)를 추정하는 것이 최종 목표입니다.
 
 ![Flowchart](https://raw.githubusercontent.com/imhyeonwoo/imhyeonwoo/main/assests/Konkuk/Signal%26System/flowchart.png)
 
