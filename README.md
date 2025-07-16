@@ -2,7 +2,7 @@
 
 건국대학교 '신호 및 시스템' 과목의 Term Project입니다.
 
-본 프로젝트는 ROS bag 파일로 수집된 IMU(Xsens) 센서와 OptiTrack 시스템 데이터를 사용하여 드론의 자세(Roll, Pitch)를 추정하는 것을 목표로 합니다. 각 센서 데이터의 특성을 분석하고, **'상보 필터(Complementary Filter)'**를 이용한 센서 퓨전 기법을 구현하여 그 성능을 검증합니다.
+본 프로젝트는 ROS bag 파일로 수집된 IMU(Xsens) 센서와 OptiTrack 시스템 데이터를 사용하여 드론의 자세(Roll, Pitch)를 추정하는 것을 목표로 합니다. 각 센서 데이터의 특성을 분석하고, 상보 필터(Complementary Filter)를 이용한 센서 퓨전 기법을 구현하여 그 성능을 검증합니다.
 
 <br>
 
@@ -70,7 +70,19 @@ ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(Reference) 데이터
 
 <br>
 
-## 5. 실행 방법
+## 5. 요구 사양 (Prerequisites)
+
+본 프로젝트를 MATLAB에서 실행하기 위해서는 아래의 툴박스(Toolbox)들이 필요합니다. MATLAB의 **[홈] 탭 > [애드온] > [애드온 탐색기]**를 통해 설치할 수 있습니다.
+
+| 툴박스 (Toolbox) | 주요 역할 (Key Role) |
+| :--- | :--- |
+| **ROS Toolbox** | `.bag` 파일에서 ROS 데이터를 읽고 처리 (`rosbag`, `readMessages`) |
+| **Signal Processing Toolbox** | 센서 데이터 노이즈 분석 및 필터링 (`fft`, `lowpass`) |
+| **Robotics System Toolbox** | 3D 자세 변환 (쿼터니언 → 오일러 각) (`quat2eul`) |
+
+<br>
+
+## 6. 실행 방법
 
 1.  이 저장소를 로컬 컴퓨터에 복제(Clone)합니다.
     ```bash
@@ -83,13 +95,14 @@ ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(Reference) 데이터
 
 <br>
 
-## 6. 파일 설명
+## 7. 파일 설명
 
 -   **`ARS_student_V1.m`**: 자세 추정 알고리즘(Bias 제거, 필터링, 상보 필터)을 구현하고 결과를 시각화하는 메인 스크립트.
 -   **`packet_student.m`**: ROS bag 파일에서 데이터를 추출하고 전처리하여 `.mat` 파일로 저장하는 스크립트.
 
 <br>
 
-## 7. For More Detail
+## 8. For More Detail
 
 -   visit https://www.notion.so/Signals-and-Systems_Term-Project-2315421b258280499899feb0629cd694
+-   contact imhyeonwoo21@gmail.com
