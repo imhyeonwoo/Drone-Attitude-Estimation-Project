@@ -87,3 +87,9 @@ ROS bag 파일에서 IMU(가속도, 자이로)와 OptiTrack(기준값) 데이터
 
 -   **`ARS_student_V1.m`**: 자세 추정 알고리즘(Bias 제거, 필터링, 상보 필터)을 구현하고 결과를 시각화하는 메인 스크립트.
 -   **`packet_student.m`**: ROS bag 파일에서 데이터를 추출하고 전처리하여 `.mat` 파일로 저장하는 스크립트.
+
+<br>
+
+## 7. For More Detail
+
+-   visit https://www.notion.so/Signals-and-Systems_Term-Project-2315421b258280499899feb0629cd694
